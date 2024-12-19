@@ -1,4 +1,3 @@
-import { fetchTasks, addTask } from './api.js';
 import { loadTasksFromStorage, saveTasksToStorage } from './storage.js';
 import { createAppTitle, createTodoItemForm, createTodoList } from './dom-utils.js';
 import { addTaskToList } from './todo-functions.js';
