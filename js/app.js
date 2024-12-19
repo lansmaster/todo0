@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        if (tasks.includes(taskName)) return;
 
         const taskName = input.value.trim();
         if (!taskName) return;
+        if (tasks.includes(taskName)) return;
 
         addTaskToList(taskName, todoList, tasks);
         input.value = '';
