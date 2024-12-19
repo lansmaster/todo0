@@ -1,11 +1,10 @@
-// Создаем заголовок приложения
+
 export function createAppTitle(title) {
     const h1 = document.createElement('h1');
     h1.innerText = title;
     return h1;
 }
 
-// Создаем форму для добавления задач
 export function createTodoItemForm() {
     const form = document.createElement('form');
     form.classList.add('input-group', 'mb-3');
@@ -28,12 +27,10 @@ export function createTodoItemForm() {
     return { form, input, button };
 }
 
-// Создаем список задач
 export function createTodoList() {
     return document.createElement('ul');
 }
 
-// Создаем элемент задачи
 export function createTodoItem(name) {
     const li = document.createElement('li');
     li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
