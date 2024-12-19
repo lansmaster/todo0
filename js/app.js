@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let tasks = loadTasksFromStorage();
 
-    tasks.length = 0;
-
     if (tasks.length === 0) {
         tasks = ["Купить продукты", "Позвонить другу", "Прочитать книгу"];
         saveTasksToStorage(tasks);
