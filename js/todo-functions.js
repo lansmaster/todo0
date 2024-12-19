@@ -8,12 +8,6 @@ export function addTaskToList(taskName, todoList, tasks) {
 
     doneButton.addEventListener('click', () => {
         li.classList.add('list-group-item-success');
-
-        setTimeout(() => {
-            li.fadeOut(300, function () {
-                $(this).remove();
-            });
-        }, 300);
     });
 
     deleteButton.addEventListener('click', () => {

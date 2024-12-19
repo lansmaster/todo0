@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\Desktop\\todo0\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-12-19T18:30:46.051Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "js\\app.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-19T18:36:21.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T18:36:21.375Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "js\\storage.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-19T18:36:11.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T18:36:11.113Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "js\\dom-utils.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-19T18:35:49.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T18:35:49.768Z"
             },
             {
               "$type": "Document",
@@ -92,7 +89,7 @@
               "RelativeDocumentMoniker": "js\\todo-functions.js",
               "ToolTip": "C:\\Users\\\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\\Desktop\\todo0\\js\\todo-functions.js",
               "RelativeToolTip": "js\\todo-functions.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-12-19T18:35:23.202Z",
               "EditorCaption": ""
