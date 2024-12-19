@@ -2,7 +2,7 @@ import { loadTasksFromStorage, saveTasksToStorage } from './storage.js';
 import { createAppTitle, createTodoItemForm, createTodoList } from './dom-utils.js';
 import { addTaskToList } from './todo-functions.js';
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
     const appContainer = document.getElementById('todo-app');
 
     appContainer.append(createAppTitle('Мой TODO список'));
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+        if (tasks.includes(taskName)) return;
 
         const taskName = input.value.trim();
         if (!taskName) return;

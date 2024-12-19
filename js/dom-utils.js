@@ -36,10 +36,15 @@ export function createTodoItem(name) {
     li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
     li.innerText = name;
 
+    const doneButton = document.createElement('button');
+    doneButton.classList.add('btn', 'btn-success', 'btn-sm');
+    doneButton.innerText = 'Готово';
+    li.append(doneButton);
+
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('btn', 'btn-danger', 'btn-sm');
     deleteButton.innerText = 'Удалить';
     li.append(deleteButton);
 
-    return { li, deleteButton };
+    return { li, doneButton, deleteButton };
 }
