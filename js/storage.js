@@ -1,12 +1,12 @@
 const STORAGE_KEY = "todoItems";
 
-// Получить задачи из localStorage
+// РџРѕР»СѓС‡РёС‚СЊ Р·Р°РґР°С‡Рё РёР· localStorage
 export function loadTasksFromStorage() {
     const tasks = localStorage.getItem(STORAGE_KEY);
     return tasks ? JSON.parse(tasks) : [];
 }
 
-// Сохранить задачи в localStorage
+// РЎРѕС…СЂР°РЅРёС‚СЊ Р·Р°РґР°С‡Рё РІ localStorage
 export function saveTasksToStorage(tasks) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
 }

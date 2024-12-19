@@ -6,29 +6,29 @@ import { loadTasksFromStorage, saveTasksToStorage } from './storage.js';
 document.addEventListener('DOMContentLoaded', async () => {
     const appContainer = document.getElementById('todo-app');
 
-    // Ñîçäàåì çàãîëîâîê
-    appContainer.append(createAppTitle('Ìîé TODO ñïèñîê'));
+    // Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº
+    appContainer.append(createAppTitle('ÐœÐ¾Ð¹ TODO ÑÐ¿Ð¸ÑÐ¾Ðº'));
 
-    // Ñîçäàåì ôîðìó è ñïèñîê
+    // Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ Ñ„Ð¾Ñ€Ð¼Ñƒ Ð¸ ÑÐ¿Ð¸ÑÐ¾Ðº
     const { form, input } = createTodoItemForm();
     appContainer.append(form);
 
     const todoList = createTodoList();
     appContainer.append(todoList);
 
-    // Çàãðóæàåì äàííûå èç localStorage èëè ñîçäàåì íà÷àëüíûå
+    // Ð—Ð°Ð³Ñ€ÑƒÐ¶Ð°ÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸Ð· localStorage Ð¸Ð»Ð¸ ÑÐ¾Ð·Ð´Ð°ÐµÐ¼ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ðµ
     let tasks = loadTasksFromStorage();
 
     if (tasks.length === 0) {
-        // Åñëè õðàíèëèùå ïóñòîå, çàäàåì íà÷àëüíûå çàäà÷è
-        tasks = ["Êóïèòü ïðîäóêòû", "Ïîçâîíèòü äðóãó", "Ïðî÷èòàòü êíèãó"];
+        // Ð•ÑÐ»Ð¸ Ñ…Ñ€Ð°Ð½Ð¸Ð»Ð¸Ñ‰Ðµ Ð¿ÑƒÑÑ‚Ð¾Ðµ, Ð·Ð°Ð´Ð°ÐµÐ¼ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸
+        tasks = ["ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹", "ÐŸÐ¾Ð·Ð²Ð¾Ð½Ð¸Ñ‚ÑŒ Ð´Ñ€ÑƒÐ³Ñƒ", "ÐŸÑ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ñ‚ÑŒ ÐºÐ½Ð¸Ð³Ñƒ"];
         saveTasksToStorage(tasks);
     }
 
-    // Îòðèñîâûâàåì çàäà÷è èç localStorage
+    // ÐžÑ‚Ñ€Ð¸ÑÐ¾Ð²Ñ‹Ð²Ð°ÐµÐ¼ Ð·Ð°Ð´Ð°Ñ‡Ð¸ Ð¸Ð· localStorage
     tasks.forEach(task => addTaskToList(task, todoList, tasks));
 
-    // Äîáàâëåíèå íîâîé çàäà÷è
+    // Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð¹ Ð·Ð°Ð´Ð°Ñ‡Ð¸
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         const taskName = input.value.trim();

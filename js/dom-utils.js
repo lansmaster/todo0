@@ -1,18 +1,18 @@
-// Создаем заголовок приложения
+// РЎРѕР·РґР°РµРј Р·Р°РіРѕР»РѕРІРѕРє РїСЂРёР»РѕР¶РµРЅРёСЏ
 export function createAppTitle(title) {
     const h1 = document.createElement('h1');
     h1.innerText = title;
     return h1;
 }
 
-// Создаем форму для добавления задач
+// РЎРѕР·РґР°РµРј С„РѕСЂРјСѓ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ Р·Р°РґР°С‡
 export function createTodoItemForm() {
     const form = document.createElement('form');
     form.classList.add('input-group', 'mb-3');
 
     const input = document.createElement('input');
     input.classList.add('form-control');
-    input.placeholder = 'Введите новое дело';
+    input.placeholder = 'Р’РІРµРґРёС‚Рµ РЅРѕРІРѕРµ РґРµР»Рѕ';
     input.required = true;
 
     const buttonWrapper = document.createElement('div');
@@ -20,7 +20,7 @@ export function createTodoItemForm() {
 
     const button = document.createElement('button');
     button.classList.add('btn', 'btn-primary');
-    button.innerText = 'Добавить дело';
+    button.innerText = 'Р”РѕР±Р°РІРёС‚СЊ РґРµР»Рѕ';
 
     buttonWrapper.append(button);
     form.append(input, buttonWrapper);
@@ -28,12 +28,12 @@ export function createTodoItemForm() {
     return { form, input, button };
 }
 
-// Создаем список задач
+// РЎРѕР·РґР°РµРј СЃРїРёСЃРѕРє Р·Р°РґР°С‡
 export function createTodoList() {
     return document.createElement('ul');
 }
 
-// Создаем элемент задачи
+// РЎРѕР·РґР°РµРј СЌР»РµРјРµРЅС‚ Р·Р°РґР°С‡Рё
 export function createTodoItem(name) {
     const li = document.createElement('li');
     li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
@@ -41,7 +41,7 @@ export function createTodoItem(name) {
 
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('btn', 'btn-danger', 'btn-sm');
-    deleteButton.innerText = 'Удалить';
+    deleteButton.innerText = 'РЈРґР°Р»РёС‚СЊ';
     li.append(deleteButton);
 
     return { li, deleteButton };

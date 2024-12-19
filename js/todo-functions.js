@@ -1,20 +1,20 @@
 import { createTodoItem } from './dom-utils.js';
 import { saveTasksToStorage } from './storage.js';
 
-// Добавление задачи в список
+// Р”РѕР±Р°РІР»РµРЅРёРµ Р·Р°РґР°С‡Рё РІ СЃРїРёСЃРѕРє
 export function addTaskToList(taskName, todoList, tasks) {
     const { li, deleteButton } = createTodoItem(taskName);
     todoList.append(li);
 
-    // Удаление задачи
+    // РЈРґР°Р»РµРЅРёРµ Р·Р°РґР°С‡Рё
     deleteButton.addEventListener('click', () => {
         const index = tasks.indexOf(taskName);
         if (index !== -1) tasks.splice(index, 1);
-        saveTasksToStorage(tasks); // Обновляем localStorage
+        saveTasksToStorage(tasks); // РћР±РЅРѕРІР»СЏРµРј localStorage
         li.remove();
     });
 
-    // Сохраняем задачу в массив и localStorage
+    // РЎРѕС…СЂР°РЅСЏРµРј Р·Р°РґР°С‡Сѓ РІ РјР°СЃСЃРёРІ Рё localStorage
     tasks.push(taskName);
     saveTasksToStorage(tasks);
 }

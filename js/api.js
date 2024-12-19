@@ -1,17 +1,17 @@
-const API_URL = "ВАШ_API_URL";
+const API_URL = "Р’РђРЁ_API_URL";
 
-// Получение задач из Google Таблицы
+// РџРѕР»СѓС‡РµРЅРёРµ Р·Р°РґР°С‡ РёР· Google РўР°Р±Р»РёС†С‹
 export async function fetchTasks() {
     const response = await axios.get(API_URL);
     return response.data;
 }
 
-// Добавление задачи в Google Таблицу
+// Р”РѕР±Р°РІР»РµРЅРёРµ Р·Р°РґР°С‡Рё РІ Google РўР°Р±Р»РёС†Сѓ
 export async function addTask(task) {
     await axios.post(API_URL, { action: 'add', task });
 }
 
-// Удаление задачи из Google Таблицы
+// РЈРґР°Р»РµРЅРёРµ Р·Р°РґР°С‡Рё РёР· Google РўР°Р±Р»РёС†С‹
 export async function deleteTask(task) {
     await axios.post(API_URL, { action: 'delete', task });
 }
